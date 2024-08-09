@@ -25,7 +25,13 @@ def get_filters():
             print("Invalid input. Please choose from chicago, new york city, or washington.")
 
     # get user input for month (all, january, february, ... , june)
-
+    months = ['january', 'february', 'march', 'april', 'may', 'june', 'all']
+    while True:
+        month = input("Which month? (all, january, february, ... , june): ").lower()
+        if month in months:
+            break
+        else:
+            print("Invalid input. Please choose from 'all', 'january', 'february', 'march', 'april', 'may', 'june'.")
 
     # get user input for day of week (all, monday, tuesday, ... sunday)
 
